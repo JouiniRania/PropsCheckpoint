@@ -6,18 +6,20 @@ const ProductTable = (props)=>{
   console.log(props)
     return(
         <div>
+       <table style={{ height: '100%', width: '300px', borderStyle:'solid', borderColor:'grey' }}>
         {props.prod.map( item=>{
             return(
-                <table style={{ height: '100%', width: '300px', borderStyle:'solid', borderColor:'grey' }}>
+               
                     <tr >
                         <td>{item.name}</td>
                         <td>{item.price}</td>
                         <td>{item.category}</td>
                     </tr>
-                </table>
+             
             );
         })
     }
+       </table>
         </div>
     );
 }
